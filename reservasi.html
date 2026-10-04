@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Dapur Lore Resto &amp; Kafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+        <div class="container nav-wrap">
+
+            <a class="brand" href="Indekx.html">
+                Dapur Lore
+            </a>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Indekx.html">Beranda</a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html" >Menu</a>
+                    </li>
+
+                    <li>
+                        <a href="galeri.html">Galeri</a>
+                    </li>
+
+                    <li>
+                        <a href="reservasi.html"class="aktif">Reservasi</a>
+                    </li>
+                    <li>
+                        <a href="kontak.html">Kontak</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+<main>
+  <section class="judul">
+    <div class="container">
+      <h1>Reservasi meja</h1>
+      <p>Isi data di bawah. Kami akan menghubungi Anda untuk konfirmasi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container dua-kolom">
+      <form class="form" action="#" method="post">
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text" required>
+
+        <label for="hp">Nomor telepon</label>
+        <input id="hp" name="hp" type="tel" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <div class="baris">
+          <div>
+            <label for="tgl">Tanggal</label>
+            <input id="tgl" name="tgl" type="date" required>
+          </div>
+          <div>
+            <label for="jam">Jam</label>
+            <input id="jam" name="jam" type="time" required>
+          </div>
+        </div>
+
+        <label for="org">Jumlah orang</label>
+        <select id="org" name="org">
+          <option>1 - 2 orang</option>
+          <option>3 - 4 orang</option>
+          <option>5 - 8 orang</option>
+          <option>Lebih dari 8 orang</option>
+        </select>
+
+        <fieldset>
+          <legend>Area duduk</legend>
+          <div class="pilih">
+            <input type="radio" id="a1" name="area" checked>
+            <label for="a1">Ruang dalam</label>
+            <input type="radio" id="a2" name="area">
+            <label for="a2">Teras taman</label>
+          </div>
+        </fieldset>
+
+        <label for="cat">Catatan</label>
+        <textarea id="cat" name="cat" rows="4"></textarea>
+
+        <button class="btn" type="submit">Kirim reservasi</button>
+      </form>
+
+      <aside class="info">
+        <h2>Sebelum memesan</h2>
+        <ul class="bahan">
+          <li>Meja ditahan 15 menit dari jam reservasi.</li>
+          <li>Rombongan lebih dari 8 orang, hubungi kami lewat telepon.</li>
+          <li>Akhir pekan cepat penuh, pesan minimal sehari sebelumnya.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</main>
